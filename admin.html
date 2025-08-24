@@ -1,0 +1,184 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="admin.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    </head>
+    <body>
+        <div id="main">
+            <header>
+                <h2>ADMIN</h2>
+            </header>
+            <div id="body">
+                <div class="body-left">
+                    <ul>
+                        <li onclick="qliuser()">QUAN LY NGUOI DUNG</li>
+                        <li onclick="qlihd()">QUAN LY HANG HOA</li>
+                        <li onclick="product()">SAN PHAM</li>
+                    </ul>
+                </div>
+                <div class="body-right">
+                    <div id="product">
+                        <div class="themsp">
+                            <div>
+                                <label for="">Ảnh</label>
+                                <input type="text" id="img">
+                            </div>
+                            <div>
+                                <label for="">Hãng</label>
+                                <input type="text" id="hang">
+                            </div>
+                            <div>
+                                <label for="">Mã</label>
+                                <input type="number" id="ma">
+                            </div>
+                            <div>
+                                <label for="">Tên</label>
+                                <input type="text" id="ten">
+                            </div>
+                            <div>
+                                <label for="">Giá</label>
+                                <input type="number" id="gia">
+                            </div>
+                            <div>
+                                <label for="">Ram</label>
+                                <input type="number" id="ram">
+                            </div>
+                            <div>
+                                <label for="">Dung luong</label>
+                                <input type="number" id="dungluong">
+                            </div>
+                            <div>
+                                <label for="">He dieu hanh</label>
+                                <input type="text" id="hdh">
+                            </div>
+                            <div>
+                                <button onclick="add()" style="display: block;">Thêm sản phẩm</button>
+                            </div>
+                        </div>
+                        <div class="table-sp">
+                            <table id="tablesp">
+                                <thead>
+                                    <tr>
+                                        <th>So</th>
+                                        <th>img</th>
+                                        <th>hang</th>
+                                        <th>ma</th>
+                                        <th>ten</th>
+                                        <th>gia</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="nguoidung">
+                        <div class="themuser">
+                            <div>
+                                <label for="">Username</label>
+                                <input type="text" id="username-ad">
+                            </div>
+                            <div>
+                                <label for="">Password</label>
+                                <input type="text" id="pass-ad">
+                            </div>
+                            <div>
+                                <label for="">Full Name</label>
+                                <input type="text" id="name-ad">
+                            </div>
+                            <div>
+                                <label for="">Dia chi</label>
+                                <input type="text" id="dc-ad">
+                            </div>
+                            <div>
+                                <label for="">So dien thoai</label>
+                                <input type="number" id="sdt-ad">
+                            </div>
+                            <div>
+                                <button onclick="adduser()" style="display: block;">Thêm Nguoi Dung</button>
+                            </div>
+                        </div>
+                        <div class="table-user">
+                            <table id="tableu">
+                                <thead>
+                                    <tr>
+                                        <th>userId</th>
+                                        <th>username</th>
+                                        <th>password</th>
+                                        <th>fullname</th>
+                                        <th>dia chi</th>
+                                        <th>So dien thoai</th>
+                                        <th>action</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="hanghoa">
+                        <div class="lochd" style="text-align: center;margin: 10px;">
+                            <label for="">Ngay bat dau</label>
+                            <input type="date" id="ngaybd">
+                            <label for="" style="margin:0 30px;">Ngay ket thuc</label>
+                            <input type="date" id="ngaykt">
+                            <button onclick="lochd()" type="button" style="margin-left: 10px;">Loc</button>
+                        </div>
+                        <div class="table-hh">
+                            <table id="tablehh">
+                                <thead>
+                                    <tr>
+                                        <th>Ma HD</th>
+                                        <th>Ma KH</th>
+                                        <th>Tong Tien</th>
+                                        <th>Tinh Trang</th>
+                                        <th>Ngay tao</th>
+                                        <th>Danh sach sản phẩm</th>
+                                        <th>action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- <tr>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>100000</td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="" selected>Chua xu ly</option>
+                                                <option value="">Da xac nhan</option>
+                                                <option value="">Da giao thanh cong</option>
+                                                <option value="">Da huy</option>
+                                            </select>
+                                        </td>
+                                        <td>12/1/2024</td>
+                                        <td><button onclick="button_dshh()">Danh sach</button></td>
+                                    </tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="danhsachhh-form">
+                            <div class="danhsachhh">
+                                <i class="fas fa-times" onclick="buttonx_dshh()"></i>
+                                <table id="tablecthh">
+                                    <thead>
+                                        <tr>
+                                            <th>STT</th>
+                                            <th>Ma SP</th>
+                                            <th>So luong</th>
+                                            <th>Gia</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- <tr>
+                                            <td>1</td>
+                                            <td>10042</td>
+                                            <td>2</td>
+                                            <td>100000</td>
+                                        </tr> -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="doan.js"></script>
+    </body>
+</html>

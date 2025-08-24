@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+header{
+    height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.body-left{
+    width: calc(20%);
+    height: 100%;
+    float: left;
+    background-color: rgb(4, 143, 4);
+    color: white;
+}
+.body-left li{
+    margin: 10px 0;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    position: relative;
+}
+.body-left li:hover{
+    background-color: white;
+    color:rgb(4,143,4);
+}
+.body-left li ul{
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 50px;
+}
+.body-left li ul{
+    color: white;
+    background-color: rgb(4, 143, 4);
+}
+.body-left li:hover > ul{
+    display: block;
+}
+.body-right{
+    width: calc(80%);
+    float: left;
+}
+.body-right .container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 20px 10px;
+}
+.body-right .container .item{
+    width: calc(25% - 20px);
+    margin: 10px;
+    text-align: center;
+    border: solid 2px black;
+    border-radius: 25px;
+}
+.body-right .container .item div{
+    margin: 5px 0;
+}
+.body-right .container img{
+    width: 100%;
+}
+#product{
+    width: 100%;
+    display: none;
+}
+#product .themsp label{
+    width: 20%;
+    text-align: right;
+}
+#product .themsp div{
+    margin: 8px 0;
+    height: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-right: 200px;
+}
+#product .themsp div input{
+    width: 50%;
+}
+#product table{
+    width: 100%;
+}
+#product table tbody{
+    text-align: center;
+}
+/* user */
+#nguoidung{
+    width: 100%;
+    display: none;
+}
+#nguoidung .themuser label{
+    width: 20%;
+    text-align: right;
+}
+#nguoidung .themuser div{
+    margin: 8px 0;
+    height: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-right: 200px;
+}
+#nguoidung .themuser div input{
+    width: 50%;
+}
+#nguoidung table{
+    width: 100%;
+}
+#nguoidung table tbody{
+    text-align: center;
+}
+#hanghoa{
+    width: 100%;
+    display: none;
+}
+#hanghoa table{
+    width: 100%;
+}
+#hanghoa table tbody{
+    text-align: center;
+}
+#danhsachhh-form{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+#danhsachhh-form .danhsachhh{
+    background-color: white;
+    width: 40%;
+    margin:50px auto;
+    text-align: center;
+    padding-top: 30px;
+    position: relative;
+}
+.danhsachhh i{
+    cursor: pointer;
+    margin-bottom: 30px;
+    position: absolute;
+    top: 10;
+    right: 20px;
+}

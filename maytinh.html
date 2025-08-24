@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="maytinh.css">
+        <script type="text/javascript" src="maytinh.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <form action="" name="maytinh">
+                <div id="head">
+                    May Tinh
+                </div>
+                <div class="model">
+                    <div class="item1">So A</div>
+                    <div class="item2">
+                        <input type="text" id="soA" name="txtsoA">
+                    </div>
+                </div>
+                <div class="model">
+                    <div class="item1">So B</div>
+                    <div class="item2">
+                        <input type="text" id="soB" name="txtsoB">
+                    </div>
+                </div>
+                <div class="model">
+                    <div class="item1">Phep tinh</div>
+                    <div class="item2">
+                        <select name="txtpheptinh" id="pheptinh">
+                            <option value="cong">+</option>
+                            <option value="tru">-</option>
+                            <option value="nhan">*</option>
+                            <option value="chia">/</option>
+                            <option value="chiadu">%</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="model">
+                    <div class="item1">Ket qua</div>
+                    <div class="item2">
+                        <input type="text" id="ketqua" name="txtketqua" readonly>
+                    </div>
+                </div>
+                <div id="foot">
+                    <input type="button" value="Submit" onclick="tinh_theo_id_co_tham_so(soA,soB,pheptinh)">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

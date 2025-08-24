@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="hobby.css">
+        <script type="text/javascript" src="hobby.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <form action="">
+                <div class="model">
+                    <div class="item1">So Thich</div>
+                    <div class="item2">
+                        <select name="txtst" id="st" onchange="sothich()">
+                            <option value=""></option>
+                            <option value="boiloi">Boi Loi</option>
+                            <option value="vothuat">Vo Thuat</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="ketqua">
+                   
+                </div>
+                <div class="model">
+                    <div class="item1">Chon cau hoi</div>
+                    <div class="item2">
+                        <select name="txtcch" id="cch">
+                            <option value="">[Chon cau hoi]</option>
+                            <option value="">Cho ban ten gi</option>
+                            <option value="">Ban sinh nam nhieu</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="model">
+                    <div class="item1">
+                        <input type="radio" name="txtnch" id="nch" onclick="cauhoi()">Nhap cau hoi
+                    </div>
+                    <div class="item2">
+                        <input type="text" name="txtkqnch" id="kqnch" readonly value="Nhap cau hoi">
+                    </div>
+                </div>
+                <div id="foot">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="kt.css">
+        <script src="kt.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <form action="" name="frmPhieudatphong">
+                <div id="head">
+                    <h3>Phieu Dat Phong</h3>
+                </div>
+                <div id="body">
+                    <div class="container">
+                        <p>Ho ten*</p>
+                        <input type="text" name="txtHoten" style="width: 350px;">
+                    </div>
+                    <div class="container">
+                        <p>Dia chi</p>
+                        <input type="text" name="txtDiachi" style="width: 350px;">
+                    </div>
+                    <div class="container">
+                        <p>So chung minh nhan dan*</p>
+                        <input type="text" name="txtcmnd" style="width: 350px;">
+                    </div>
+                    <div class="container">
+                        <p>Muc gia</p>
+                        <select name="cboMucgia" id="" onclick="cau2()">
+                            <option value="a">Loai thuong</option>
+                            <option value="b">Loai sang trong</option>
+                            <option value="c">Loai dac biet</option>
+                        </select>
+                    </div>
+                    <div class="container1">
+                        <div>
+                            <p>Ngay thue</p>
+                            <input type="date" name="dateNgaythue">
+                        </div>
+                        <div>
+                            <p>Ngay tra</p>
+                            <input type="date" name="dateNgaytra">
+                        </div>
+                    </div>
+                    <div class="container2">
+                        <p>Dich vu di kem</p>
+                        <input type="checkbox" name="chkAnsang">An sang
+                        <input type="checkbox" name="chkGiatui">Giat ui
+                        <input type="checkbox" name="chkBaobuoisang">Bao buoi sang
+                    </div>
+                    <div class="container">
+                        <p>Tien thue phong</p>
+                        <input type="text" name="txtTienthuephong" readonly>
+                    </div>
+                    <div id="foot">
+                        <button type="button" onclick="cau3()">Tinh don gia</button>
+                        <button type="submit" onclick="cau1()">Dang ky</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
